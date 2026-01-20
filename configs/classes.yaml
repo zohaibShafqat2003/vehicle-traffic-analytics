@@ -1,0 +1,9 @@
+# Vehicle Classes Configuration (Phase 1)
+# Phase 1 uses YOLO pretrained classes
+# Later phases will remap to Pakistan-specific taxonomy
+
+keep_classes:
+  - car
+  - motorcycle
+  - bus
+  - truck

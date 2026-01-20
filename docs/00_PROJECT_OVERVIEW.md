@@ -29,7 +29,11 @@ Build an ML-powered algorithm capable of:
 - Training & handover → docs/10_TRAINING_HANDOVER.md
 
 ## 📊 Milestones (Recommended)
-- M1: Baseline pipeline works end-to-end (pretrained model)
+- ✅ **M1: Baseline pipeline works end-to-end (pretrained model)** - COMPLETE
+  - Interactive calibration tool implemented
+  - Track-based counting operational
+  - Multi-video processing validated
+  - Optimized settings: 10 fps, 960px, YOLOv8n
 - M2: Pakistan-specific fine-tuning baseline + initial metrics
 - M3: Robustness tuning (night/occlusion) + counting accuracy validation
 - M4: Deployment packaging + documentation + training/handover

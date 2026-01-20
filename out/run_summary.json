@@ -1,0 +1,42 @@
+{
+  "run_at": "2026-01-17T20:07:57.758582Z",
+  "input_video": "C:\\Users\\DELL\\Documents\\WORK\\CV project\\vehicle-traffic-analytics\\data\\raw_videos\\TLC00007.AVI",
+  "site_id": "TLC00007",
+  "meta": {
+    "src_fps": 15.0,
+    "fps_infer": 10.0,
+    "step": 2,
+    "total_frames": 20480,
+    "width": 1280,
+    "height": 720
+  },
+  "config": {
+    "fps_infer": 10,
+    "detector": {
+      "model": "yolov8n.pt",
+      "conf": 0.25,
+      "iou": 0.5,
+      "imgsz": 960
+    },
+    "tracker": {
+      "type": "bytetrack",
+      "cfg": "bytetrack.yaml"
+    },
+    "counting": {
+      "rule": "line_crossing",
+      "min_track_age_frames": 3,
+      "count_once_per_video": true
+    },
+    "output": {
+      "write_annotated_video": true,
+      "annotated_fps": 20
+    }
+  },
+  "events_total": 67,
+  "counts_rows": 6,
+  "outputs": {
+    "counts_csv": "C:\\Users\\DELL\\Documents\\WORK\\CV project\\vehicle-traffic-analytics\\out\\counts\\counts_15min.csv",
+    "counts_xlsx": "C:\\Users\\DELL\\Documents\\WORK\\CV project\\vehicle-traffic-analytics\\out\\counts\\counts_15min.xlsx",
+    "annotated_video": "C:\\Users\\DELL\\Documents\\WORK\\CV project\\vehicle-traffic-analytics\\out\\annotated_videos\\TLC00007_annotated.mp4"
+  }
+}

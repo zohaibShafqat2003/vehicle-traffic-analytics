@@ -1,0 +1,22 @@
+# Pipeline Configuration (Phase 1)
+# Optimized for better detection accuracy
+fps_infer: 10  # Increased from 5 - fewer misses, fewer track breaks
+
+detector:
+  model: "yolov8n.pt"  # Nano model - faster inference
+  conf: 0.25
+  iou: 0.5
+  imgsz: 960  # Increased from 640 - small vehicles more detectable
+
+tracker:
+  type: "bytetrack"
+  cfg: "bytetrack.yaml"   # ultralytics built-in name
+
+counting:
+  rule: "line_crossing"   # or "roi_entry"
+  min_track_age_frames: 3
+  count_once_per_video: true
+
+output:
+  write_annotated_video: true
+  annotated_fps: 20

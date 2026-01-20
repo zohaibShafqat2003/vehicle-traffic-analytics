@@ -1,0 +1,51 @@
+sites:
+  TLC00003:
+    site_id: TLC00003
+    line:
+      p1:
+      - 452
+      - 241
+      p2:
+      - 951
+      - 454
+    direction: any
+  TLC00007:
+    site_id: TLC00007
+    line:
+      p1:
+      - 401
+      - 215
+      p2:
+      - 681
+      - 305
+    direction: any
+  site_01:
+    site_id: site_01
+    line:
+      p1:
+      - 640
+      - 100
+      p2:
+      - 640
+      - 650
+    direction: any
+  vid3:
+    site_id: vid3
+    line:
+      p1:
+      - 225
+      - 194
+      p2:
+      - 677
+      - 196
+    direction: any
+  WhatsApp Video 2026-01-17 at 11.19.39 PM:
+    site_id: WhatsApp Video 2026-01-17 at 11.19.39 PM
+    line:
+      p1:
+      - 208
+      - 191
+      p2:
+      - 680
+      - 194
+    direction: any
