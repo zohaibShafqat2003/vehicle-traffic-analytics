@@ -1,0 +1,33 @@
+# Vehicle Traffic Analytics - Phase 2 Dataset
+# YOLO Format Training Configuration
+
+# Paths (relative to repo root)
+path: data/dataset_yolo  # Dataset root (run training from repo root)
+train: images/train
+val: images/val
+test: images/test
+
+# Number of classes
+nc: 7
+
+# Class names (Phase 2 - Core Classes)
+names:
+  0: motorcycle
+  1: car
+  2: van
+  3: minibus
+  4: bus
+  5: truck
+  6: qingqi_rickshaw
+
+# Dataset Information
+# Train: 97 images (site01_clipA + site01_clipB)
+# Val: 12 images (site02_clipA)
+# Test: 14 images (site02_clipB)
+# Total: 123 images
+# Source: Roboflow export v1i
+
+# Split Strategy: Clip-based (prevents data leakage)
+# - Different clips for train/val/test
+# - No frame overlap between splits
+# - Site diversity maintained (site01 for training, site02 for validation/testing)

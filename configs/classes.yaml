@@ -1,9 +1,17 @@
-# Vehicle Classes Configuration (Phase 1)
-# Phase 1 uses YOLO pretrained classes
-# Later phases will remap to Pakistan-specific taxonomy
+# Vehicle Classes Configuration (Phase 2 - Core Classes)
+# Phase 2 uses core vehicle taxonomy for Pakistan traffic
+# Avoids hard classes (cycle, axle-trucks) for Phase 3 training
 
-keep_classes:
-  - car
-  - motorcycle
-  - bus
-  - truck
+names:
+  0: motorcycle
+  1: car
+  2: van
+  3: minibus
+  4: bus
+  5: truck
+  6: qingqi_rickshaw
+
+# Mapping rationale:
+# - IDs 0-6: Core vehicle types for Phase 2
+# - Excludes cycles and axle-trucks (Phase 3)
+# - Maintains stable label mapping for training consistency
